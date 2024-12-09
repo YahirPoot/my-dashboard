@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { defaultUrlMatcher } from '@angular/router';
 
 @Component({
   imports: [],
   templateUrl: './control-flow.component.html',
   styles: ``
 })
-export class ControlFlowComponent {
+export default class ControlFlowComponent {
 
 }

@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { defaultUrlMatcher } from '@angular/router';
+import { TitleComponent } from '@shared/title/title.component';
 
 type Grade = 'A' | 'B' | 'F';
 
 @Component({
-  imports: [],
+  imports: [TitleComponent],
   templateUrl: './control-flow.component.html',
   styles: ``
 })

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { SideMenuComponent } from '../shared/side-menu/side-menu.component';
+// Configuración de alias de la ruta en Typescript (tsconfig.json)
+import { SideMenuComponent } from '@shared/side-menu/side-menu.component';
+
 
 @Component({
   standalone: true,

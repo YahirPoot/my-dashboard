@@ -3,6 +3,11 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+
+    // Configuración de alias de importaciones en TypeScript
+    "paths": {
+      "@shared/*": ["./src/app/shared/*"],
+    },
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { defaultUrlMatcher } from '@angular/router';
 
 @Component({
@@ -8,4 +8,9 @@ import { defaultUrlMatcher } from '@angular/router';
 })
 export default class ControlFlowComponent {
 
+  public showContent = signal(false);
+
+  public toggleContent() {
+    this.showContent.update(value => !value);
+  }
 }

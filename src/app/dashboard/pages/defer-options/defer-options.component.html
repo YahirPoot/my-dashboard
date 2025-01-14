@@ -1,1 +1,20 @@
-<p>defer-options works!</p>
+<app-title title="Defer Triggers"></app-title>
+
+<section>
+
+  <h1 class="text-xl font-bold">Interacciones</h1>
+  <hr class="my-2">
+
+  <!--? El defer tiene la capacidad de diferir la carga de un componente hasta que se cumpla una condición. En este caso, se carga el componente cuando el usuario interactúa con el elemento. -->
+  <!--! El on interaction necesita un placeholder para poder ser activado. En este caso, el placeholder es un div que al ser clickeado, carga el componente. -->
+  @defer (on interaction) {
+    <app-heavy-loaders-fast cssClass="bg-red-500 h-20 flex justify-center items-center text-white">
+      <span>On Interaction</span>
+
+    </app-heavy-loaders-fast>
+  } @placeholder {
+    <div class="w-full h-20 bg-slate-400 hover:bg-slate-500 flex justify-center items-center">
+      <span class="text-white font-bold">On click in the div</span>
+    </div>
+  }
+</section>
